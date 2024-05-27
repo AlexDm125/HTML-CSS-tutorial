@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/html.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div style="background-color: rgb(255, 200, 0); height: 80px;">
+                <h1>HTML & CSS</h1>
+            </div>
+            <div style="background-color: rgb(51, 51, 49); height: 40px;">
+                <nav class="nav" style="margin-left: -15px;">
+                    <ul class="menu">
+                        <li>
+                            <i class="fas fa-bars" style=" color: white;" id="barBtn"></i>
+                        </li>
+                        <li style="margin-left: -25px;">
+                            <a href="../../index.html">Головна</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="leftMenu" style="background-color: #f8f9fa;" id="leftMenu">
+                <a href="../Градієнти/index.html">Градієнти</a>
+                <a href="../Зображення/index.html">Зображення</a>
+                <a href="../Списки/index.html">Списки</a>
+                <a href="../Таблиці/index.html">Таблиці</a>
+                <a href="../Посилання/index.html">Посилання та кнопки</a>
+                <a href="../Форми/index.html">Форми</a>
+                <a href="../Анімація/index.html">Анімація</a>
+                <a href="../Мультимедія/index.html">Мультимедія</a>
+                <a href="../Map/index.html">Тег map</a>
+                <a href="../Адаптивність/index.html">Адаптивний дизайн</a>
+            </div>
+            <div class="content" style="background-color: #f8f9fa;">
+                <h2>
+                    Робота з зображеннями
+                </h2>
+                <h3>
+                    Додавання зображення через background-image:css
+                </h3>
+                <p>background-image: url(шлях_до_зображення.jpg);</p>
+                <ul>
+                    <li>
+                        background-image - встановлює зображення як фон елементу.
+                    </li>
+                    <li>
+                        url(шлях_до_зображення.jpg) - вказує шлях до зображення, яке буде використане як фон.
+                    </li>
+                </ul>
+                <div id="d1"></div>
+                <h3>
+                    Додавання зображення за допомогою тегу &lt;img&gt;
+                </h3>
+                <p>&lt;img src="url_зображення.jpg" alt="Опис зображення"&gt;</p>
+                <ul>
+                    <li>
+                        src - вказує шлях до зображення.
+                    </li>
+                    <li>
+                        alt - надає альтернативний текст, який відображається, якщо зображення 
+                        не може бути завантажено або якщо користувач використовує програму читання екрана.
+                    </li>
+                </ul>
+                <img src="https://img2.storyblok.com/filters:quality(70)/f/81332/1920x640/dd6a1d5b22/ukraine-independence-monument-hero-1920x640.jpg" alt="Ukraine" id="img" title="Ukraine">
+                <img src="img/7.webp" alt="Uk" id="img2">
+                <p>про css в зображенні два</p>
+                <ul>
+                    <li>
+                        width: 500px; - Задає фіксовану ширину зображення на 500px.
+                    </li>
+                    <li>
+                        border-radius: 50%; - Заокруглює кути зображення, роблячи його заокругленим.
+                    </li>
+                    <li>
+                        box-shadow: 0 0 50px lime; - Додає тінь зображенню. Тут зображено тінь із зеленим кольором (lime) радіусом 50px.
+                    </li>
+                </ul>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+                            <pre><code class="language-html">
+&lt;img src="https://img2.storyblok.com/filters:quality(70)/f/81332/1920x640/dd6a1d5b22/ukraine-independence-monument-hero-1920x640.jpg" alt="Ukraine" id="img" title="Ukraine"&gt;
+&lt;img src="img/7.webp" alt="Uk" id="img2"&gt;         
+                           </code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    #img{
+        width: 50%;
+        margin: auto;
+        display: block;
+    
+    }
+    
+    #img2{
+        width: 500px;
+        border-radius: 50%;
+        box-shadow: 0 0 50px lime;
+        margin-top: 50px;
+    }
+</code></pre>
+                    </div>
+                </div>
+                <h3>
+                    CSS border-image
+                </h3>
+                <div id="d2"></div>
+                <ul>
+                    <li>
+                        border - встановлює товщину, стиль і колір межі.
+                    </li>
+                    <li>
+                        border-image - вказує шлях до зображення, яке буде використане для створення межі, і ширина області зображення, що використовується для межі.
+                    </li>
+                </ul>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+                            <pre><code class="language-html">
+&lt;div id="d2"&gt;&lt;/div&gt;
+                           </code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    #d2{
+        border: 50px solid;
+        border-image: url(https://miro.medium.com/v2/resize:fit:1400/1*8DlnAf1YhmBnIKVrCCnXJA.jpeg) 10%;
+    
+    }            
+</code></pre>
+                    </div>
+                </div>
+
+                <h3>
+                    CSS border-image-slice
+                </h3>
+                <div id="d3"></div>
+                <p>
+                    border-image-slice: 25% - встановлює внутрішню область зображення, 
+                    яка використовується для межі, як 25% від всіх сторін зображення.
+                </p>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+                            <pre><code class="language-html">
+&lt;div id="d3"&gt;&lt;/div&gt;
+                           </code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    #d3{
+        border: 50px solid;
+        border-image: url(https://i.stack.imgur.com/PiMkJ.png)100% 30 round;
+        border-image-slice: 25%;
+    }
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script>
+        var barBtn = document.getElementById('barBtn');
+        var leftMenu = document.getElementById('leftMenu');
+
+        window.onload = function() {
+            if(window.innerWidth <= 1100) {
+                barBtn.style.display = 'block';
+                leftMenu.style.display = 'none';
+            }else{
+                barBtn.style.display = 'none';
+            }
+        }
+
+
+        window.onresize = function() {
+            if(window.innerWidth <= 1100) {
+                barBtn.style.display = 'block';
+                leftMenu.style.display = 'none';
+            } else {
+                barBtn.style.display = 'none';
+                leftMenu.style.display = 'block';
+            }
+        }
+
+        barBtn.onclick = function() {
+            if(leftMenu.style.display === 'none') {
+                leftMenu.style.display = 'block';
+            } else {
+                leftMenu.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            var headerHeight = 120;
+            var scrollY = window.scrollY;
+            var newTop = headerHeight - scrollY;
+        
+            if (newTop < 0) {
+                newTop = 0;
+            }
+
+            document.documentElement.style.setProperty('--menu-top', newTop + 'px');
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const examples = document.querySelectorAll(".example");
+
+            examples.forEach(example => {
+            const tabs = example.querySelectorAll(".tab");
+            const codeContainers = example.querySelectorAll(".code-container");
+
+                tabs.forEach(tab => {
+                    tab.addEventListener("click", () => {
+                    const tabType = tab.getAttribute("data-tab");
+                    const codeContainer = example.querySelector(`.code-container[data-code="${tabType}"]`);
+
+                    if (tab.classList.contains("active")) {
+                        tab.classList.remove("active");
+                        codeContainer.classList.remove("active");
+                    } else {
+                        tabs.forEach(t => t.classList.remove("active"));
+                        codeContainers.forEach(cc => cc.classList.remove("active"));
+                        tab.classList.add("active");
+                        codeContainer.classList.add("active");
+                    }
+                });
+            });
+        });
+    });
+    </script>
+</body>
+</html>

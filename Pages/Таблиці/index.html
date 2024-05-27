@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/html.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div style="background-color: rgb(255, 200, 0); height: 80px;">
+                <h1>HTML & CSS</h1>
+            </div>
+            <div style="background-color: rgb(51, 51, 49); height: 40px;">
+                <nav class="nav" style="margin-left: -15px;">
+                    <ul class="menu">
+                        <li>
+                            <i class="fas fa-bars" style=" color: white;" id="barBtn"></i>
+                        </li>
+                        <li style="margin-left: -25px;">
+                            <a href="../../index.html">Головна</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="leftMenu" style="background-color: #f8f9fa;" id="leftMenu">
+                <a href="../Градієнти/index.html">Градієнти</a>
+                <a href="../Зображення/index.html">Зображення</a>
+                <a href="../Списки/index.html">Списки</a>
+                <a href="../Таблиці/index.html">Таблиці</a>
+                <a href="../Посилання/index.html">Посилання та кнопки</a>
+                <a href="../Форми/index.html">Форми</a>
+                <a href="../Анімація/index.html">Анімація</a>
+                <a href="../Мультимедія/index.html">Мультимедія</a>
+                <a href="../Map/index.html">Тег map</a>
+                <a href="../Адаптивність/index.html">Адаптивний дизайн</a>
+            </div>
+            <div class="content" style="background-color: #f8f9fa;">
+                <h2>
+                    Таблиці
+                </h2>
+                <p>
+                    Таблиця в HTML використовується для структурування та відображення даних 
+                    в табличному вигляді. У даному прикладі, таблиця містить інформацію про книги, 
+                    де кожний рядок таблиці представляє окрему книгу, а кожний стовпчик - певну 
+                    характеристику книги, таку як назва, автор, рік видання та жанр.
+                </p>
+                <h3>
+                    Теги та атрибути:
+                </h3>
+
+                <ul>
+                    <li>
+                        &lt;table&gt;: Тег, який визначає таблицю.
+                    </li>
+                    <li>
+                        &lt;caption&gt;: Тег, який вказує заголовок таблиці.
+                    </li>
+                    <li>
+                        &lt;thead&gt;, &lt;tbody&gt;: Теги, які визначають голову та тіло таблиці відповідно.
+                    </li>
+                    <li>
+                        &lt;th&gt;: Тег, який визначає заголовок стовпця або рядка в таблиці.
+                    </li>
+                    <li>
+                        &lt;td&gt;: Тег, який визначає комірку в таблиці.
+                    </li>
+                </ul>
+                <h3>
+                    CSS
+                </h3>
+                <ul>
+                    <li>
+                        border: Визначає стиль, ширину та колір межі для комірок таблиці.
+                    </li>
+                    <li>
+                        border-collapse: Вказує, як рамки комірок повинні злитися разом: collapse - рамки зливаються, separate - рамки відокремлені.
+                    </li>
+                    <li>
+                        caption-side: Визначає сторону, на якій розміщується заголовок таблиці: top, bottom.
+                    </li>
+                    <li>
+                        vertical-align: Вирівнює текст або зображення вертикально всередині комірок: top, middle, bottom, baseline.
+                    </li>
+                    <li>
+                        box-shadow: Додає тінь до таблиці або комірок.
+                    </li>
+                </ul>
+                <p>
+                    Можна змінити стиль парних та непарних рядків у таблиці 
+                    за допомогою псевдокласів :nth-child(even) і :nth-child(odd).
+                </p>
+                <h3>
+                    Приклад
+                </h3>
+
+
+
+
+
+
+                <table>
+                    <caption>Інформація про книги</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Назва книги + Автор</th>
+                            <th>Рік видання</th>
+                            <th>Жанр</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="spcell">Три товариша</td>
+                            <td>Еріх Марія Ремарк</td>
+                            <td>1936</td>
+                            <td>Драма</td>
+                        </tr>
+                        <tr>
+                            <td>Великий Ґетсбі</td>
+                            <td>Френсіс Скотт Фіцджеральд</td>
+                            <td>1925</td>
+                            <td class="spcell">Модерністський роман</td>
+                        </tr>
+                        <tr>
+                            <td>Ловець у житі</td>
+                            <td>Дж. Д. Селінджер</td>
+                            <td class="spcell">1951</td>
+                            <td>Постмодерністський роман</td>
+                        </tr>
+                        <tr>
+                            <td>Гордість та упередження</td>
+                            <td>Джейн Остін</td>
+                            <td>1813</td>
+                            <td>Роман</td>
+                        </tr>
+                        <tr>
+                            <td class="spcell">Володар мух</td>
+                            <td>Вільям Голдінг</td>
+                            <td>1954</td>
+                            <td>Алегоричний роман</td>
+                        </tr>
+                        <tr>
+                            <td>Злочин і кара</td>
+                            <td>Федір Достоєвський</td>
+                            <td class="spcell">1866</td>
+                            <td>Психологічний роман</td>
+                        </tr>
+                        <tr>
+                            <td>Гамлет</td>
+                            <td>Вільям Шекспір</td>
+                            <td>1600</td>
+                            <td>Трагедія</td>
+                        </tr>
+                        <tr>
+                            <td>Грізна нова світиня</td>
+                            <td class="spcell">Олдос Гакслі</td>
+                            <td>1932</td>
+                            <td>Дистопія</td>
+                        </tr>
+                        <tr>
+                            <td class="spcell">1984</td>
+                            <td>Джордж Орвелл</td>
+                            <td>1949</td>
+                            <td>Дистопія</td>
+                        </tr>
+                        <tr>
+                            <td>Володар перснів</td>
+                            <td>Дж. Р. Р. Толкін</td>
+                            <td class="spcell">1954-1955</td>
+                            <td>Фентезі</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+
+
+
+
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+<pre><code class="language-html">
+&lt;table&gt;
+    &lt;caption&gt;Інформація про книги&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th colspan="2"&gt;Назва книги + Автор&lt;/th&gt;
+            &lt;th&gt;Рік видання&lt;/th&gt;
+            &lt;th&gt;Жанр&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class="spcell"&gt;Три товариша&lt;/td&gt;
+            &lt;td&gt;Еріх Марія Ремарк&lt;/td&gt;
+            &lt;td&gt;1936&lt;/td&gt;
+            &lt;td&gt;Драма&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Великий Ґетсбі&lt;/td&gt;
+            &lt;td&gt;Френсіс Скотт Фіцджеральд&lt;/td&gt;
+            &lt;td&gt;1925&lt;/td&gt;
+            &lt;td class="spcell"&gt;Модерністський роман&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ловець у житі&lt;/td&gt;
+            &lt;td&gt;Дж. Д. Селінджер&lt;/td&gt;
+            &lt;td class="spcell"&gt;1951&lt;/td&gt;
+            &lt;td&gt;Постмодерністський роман&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Гордість та упередження&lt;/td&gt;
+            &lt;td&gt;Джейн Остін&lt;/td&gt;
+            &lt;td&gt;1813&lt;/td&gt;
+            &lt;td&gt;Роман&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="spcell"&gt;Володар мух&lt;/td&gt;
+            &lt;td&gt;Вільям Голдінг&lt;/td&gt;
+            &lt;td&gt;1954&lt;/td&gt;
+            &lt;td&gt;Алегоричний роман&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Злочин і кара&lt;/td&gt;
+            &lt;td&gt;Федір Достоєвський&lt;/td&gt;
+            &lt;td class="spcell"&gt;1866&lt;/td&gt;
+            &lt;td&gt;Психологічний роман&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Гамлет&lt;/td&gt;
+            &lt;td&gt;Вільям Шекспір&lt;/td&gt;
+            &lt;td&gt;1600&lt;/td&gt;
+            &lt;td&gt;Трагедія&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Грізна нова світиня&lt;/td&gt;
+            &lt;td class="spcell"&gt;Олдос Гакслі&lt;/td&gt;
+            &lt;td&gt;1932&lt;/td&gt;
+            &lt;td&gt;Дистопія&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="spcell"&gt;1984&lt;/td&gt;
+            &lt;td&gt;Джордж Орвелл&lt;/td&gt;
+            &lt;td&gt;1949&lt;/td&gt;
+            &lt;td&gt;Дистопія&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Володар перснів&lt;/td&gt;
+            &lt;td&gt;Дж. Р. Р. Толкін&lt;/td&gt;
+            &lt;td class="spcell"&gt;1954-1955&lt;/td&gt;
+            &lt;td&gt;Фентезі&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+</code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    body{
+        background-color: orange;
+    }
+    p{
+        font-size: 50px;
+    }
+    table{
+        font-size: 25px;
+        border: 5px double black;
+        width: 50%;
+        border-collapse: collapse;
+        margin: auto;
+    }
+    
+    thead th{
+        background-color: white;
+    }
+    th,td{
+        border: 1px solid black;
+        width: 25%;
+    }
+    tr:hover{
+        background-color: brown;
+    }
+    td:hover{
+        background-image: url(https://img1.picmix.com/output/stamp/normal/6/0/8/3/2173806_5ed13.gif);
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.1em;
+    }
+    tr:nth-child(even){
+        background-color: white;
+    }
+    tr:nth-child(odd){
+        background-color: #e5e5e5;
+    }
+    
+    .spcell{
+        border: 5px ridge red;
+        text-align: right;
+        vertical-align: bottom;
+    
+    }
+    caption{
+        background-color: white;
+        font-size: 36px;
+    }
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script>
+        var barBtn = document.getElementById('barBtn');
+        var leftMenu = document.getElementById('leftMenu');
+
+        window.onload = function() {
+            if(window.innerWidth <= 1100) {
+                barBtn.style.display = 'block';
+                leftMenu.style.display = 'none';
+            }else{
+                barBtn.style.display = 'none';
+            }
+        }
+
+
+        window.onresize = function() {
+            if(window.innerWidth <= 1100) {
+                barBtn.style.display = 'block';
+                leftMenu.style.display = 'none';
+            } else {
+                barBtn.style.display = 'none';
+                leftMenu.style.display = 'block';
+            }
+        }
+
+        barBtn.onclick = function() {
+            if(leftMenu.style.display === 'none') {
+                leftMenu.style.display = 'block';
+            } else {
+                leftMenu.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            var headerHeight = 120;
+            var scrollY = window.scrollY;
+            var newTop = headerHeight - scrollY;
+        
+            if (newTop < 0) {
+                newTop = 0;
+            }
+
+            document.documentElement.style.setProperty('--menu-top', newTop + 'px');
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const examples = document.querySelectorAll(".example");
+
+            examples.forEach(example => {
+            const tabs = example.querySelectorAll(".tab");
+            const codeContainers = example.querySelectorAll(".code-container");
+
+                tabs.forEach(tab => {
+                    tab.addEventListener("click", () => {
+                    const tabType = tab.getAttribute("data-tab");
+                    const codeContainer = example.querySelector(`.code-container[data-code="${tabType}"]`);
+
+                    if (tab.classList.contains("active")) {
+                        tab.classList.remove("active");
+                        codeContainer.classList.remove("active");
+                    } else {
+                        tabs.forEach(t => t.classList.remove("active"));
+                        codeContainers.forEach(cc => cc.classList.remove("active"));
+                        tab.classList.add("active");
+                        codeContainer.classList.add("active");
+                    }
+                });
+            });
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: 000;
+	font-size: 16px;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+h2{
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+}
+h3{
+    padding-top: 10px;
+    font-family: sanserif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+}
+h4{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.content ul li{
+    font-size: 20px;
+}
+
+
+header h1{
+    padding: 25px;
+}
+
+.header .container{
+    width: 100%;
+	height: 120px;
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --menu-top: 120px; /* Початковий відступ від верху, рівний висоті хедера */
+}
+
+.container .leftMenu {
+    position: fixed;
+    top: var(--menu-top);
+    left: 0;
+    bottom: 0; /* Закріпити нижній край */
+    width: 20%;
+    border-right: 3px solid rgb(51, 51, 49);
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    transition: top 0.000000000000000000001s; /* Додаємо плавний перехід для анімації */
+}
+
+
+.container .content{
+    height: 100%;
+    width:75%;
+    padding: 30px;
+    margin-left: 20%;
+}
+
+main .container{
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+
+}
+
+.leftMenu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding-left: 25px;
+    padding: 10px;
+}
+.leftMenu a:hover{
+    background-color: rgb(255, 200, 0);
+}
+
+.leftMenu h3{
+    font-size: 20px;
+    margin-left: 10px;
+}
+/* .container i{
+    display: inline-block;
+} */
+
+
+@media (min-width: 1600px) {
+    h2{
+        font-size: 45px;
+    }
+    
+    p{
+        font-size: 25px;
+    }
+    h3{
+        padding-top: 15px;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .content ul li{
+        font-size: 25px;
+    }
+    
+    
+    header h1{
+        font-size: 40px;
+    }
+
+    .leftMenu a {
+        font-size: 22px;
+        padding-left: 30px;
+        padding: 12px;
+    }
+    
+}
+
+
+@media (max-width: 1100px) {
+    .container  .leftMenu {
+        width: 250px;
+    }
+
+    
+    .container .content{
+        height: 100%;
+        width:calc(100% - 75px);
+        padding: 30px;
+        margin-left: 10px;
+    }
+}
+  
+
+
+
+
+
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab {
+    width: 50%;
+    padding: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    text-align: center;
+    user-select: none;
+}
+
+.tab.active {
+    background-color: #eee;
+}
+
+.code-container {
+    display: none;
+}
+
+.code-container.active {
+    display: block;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+header a {
+	color: #FFFFFF;
+
+}
+
+.menu {
+	display: flex;
+	padding: 0;
+	margin-left: 30px;
+    margin-top: 12px;
+}
+
+.menu li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.menu li{
+	font-size: 14px;
+	margin-right: 40px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.1em;
+	background-color: #000000;
+    margin-left: 0;
+}
+
+
+
+
+.button-link {
+    display: inline-block; /* Робимо елемент блочним для налаштування розмірів */
+    padding: 10px 20px; /* Внутрішні відступи */
+    background-color: #007BFF; /* Колір фону */
+    color: #ffffff; /* Колір тексту */
+    text-align: center; /* Вирівнювання тексту по центру */
+    text-decoration: none; /* Прибрати підкреслення */
+    border-radius: 5px; /* Закруглення кутів */
+    transition: background-color 0.3s ease; /* Анімація зміни кольору фону */
+  }
+  
+  .button-link:hover {
+    background-color: #0056b3; /* Темніший колір при наведенні */
+  }
+  
+  .button-link1 {
+    padding: 10px 20px; /* Внутрішні відступи */
+    background-color: #007BFF; /* Колір фону */
+    color: #ffffff; /* Колір тексту */
+    border: none; /* Без рамки */
+    text-align: center; /* Вирівнювання тексту по центру */
+    text-decoration: none; /* Прибрати підкреслення */
+    border-radius: 5px; /* Закруглення кутів */
+    cursor: pointer; /* Курсор у вигляді вказівника */
+    transition: background-color 0.3s ease; /* Анімація зміни кольору фону */
+  }
+  
+  .button-link1:hover {
+    background-color: #0056b3; /* Темніший колір при наведенні */
+  }
+  
+
+
+
+
+
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+/* CSS */
+.button-24 {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+  .button-24:hover,
+  .button-24:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+  }
+  
+  .button-24:active {
+    opacity: .5;
+  }
+
+
+
+
+
+  .button-73 {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-73:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+  }
+  
+  .button-73:active {
+    transform: scale(1.025);
+  }
+  
+  @media (min-width: 768px) {
+    .button-73 {
+      font-size: 1.5rem;
+      padding: .75rem 2rem;
+    }
+  }

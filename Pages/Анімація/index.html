@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/html.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div style="background-color: rgb(255, 200, 0); height: 80px;">
+                <h1>HTML & CSS</h1>
+            </div>
+            <div style="background-color: rgb(51, 51, 49); height: 40px;">
+                <nav class="nav" style="margin-left: -15px;">
+                    <ul class="menu">
+                        <li>
+                            <i class="fas fa-bars" style=" color: white;" id="barBtn"></i>
+                        </li>
+                        <li style="margin-left: -25px;">
+                            <a href="../../index.html">Головна</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="leftMenu" style="background-color: #f8f9fa;" id="leftMenu">
+                <a href="../Градієнти/index.html">Градієнти</a>
+                <a href="../Зображення/index.html">Зображення</a>
+                <a href="../Списки/index.html">Списки</a>
+                <a href="../Таблиці/index.html">Таблиці</a>
+                <a href="../Посилання/index.html">Посилання та кнопки</a>
+                <a href="../Форми/index.html">Форми</a>
+                <a href="../Анімація/index.html">Анімація</a>
+                <a href="../Мультимедія/index.html">Мультимедія</a>
+                <a href="../Map/index.html">Тег map</a>
+                <a href="../Адаптивність/index.html">Адаптивний дизайн</a>
+            </div>
+            <div class="content" style="background-color: #f8f9fa;">
+                <h2>
+                    Анімація
+                </h2>
+                <h3>
+                    Тег  &lt;marquee &gt;
+                </h3>
+                <p>
+                    Це HTML елемент, який використовується для створення ефектів анімації тексту або контенту. 
+                    Примітка: Цей елемент є застарілим і не рекомендується використовувати в сучасних веб-розробках.
+                </p>
+                <h4>
+                    Атрибути marquee
+                </h4>
+                <ul>
+                    <li>
+                        behavior: Визначає тип анімації (alternate, slide, scroll).
+                    </li>
+                    <li>
+                        direction: Визначає напрямок руху анімованого контенту (left, right, up, down).
+                    </li>
+                    <li>
+                        loop: Визначає кількість повторень анімації.
+                    </li>
+                </ul>
+                <h4>
+                    Значення атрибуті behavior
+                </h4>
+                <ul>
+                    <li>
+                        Alternate (alternate): Цей анімаційний ефект змінює напрямок руху контенту черговим чином. 
+                        Коли контент доходить до кінця контейнера, він змінює напрямок руху на протилежний і продовжує 
+                        анімацію у зворотному напрямку.
+                    </li>
+                    <li>
+                        Slide (slide): Цей анімаційний ефект зміщує контент вздовж вказаного напрямку 
+                        (вліво, вправо, вгору або вниз), поки він не досягне кінця контейнера, а потім повертається 
+                        до початкової позиції, щоб почати анімацію знову.
+                    </li>
+                    <li>
+                        Scroll (scroll): Цей анімаційний ефект прокручує контент вздовж вказаного напрямку 
+                        (вліво, вправо, вгору або вниз) поки він не досягне кінця контейнера, після чого контент 
+                        повертається до початкової позиції і продовжується анімація.
+                    </li>
+                </ul>
+                <h4>
+                    Приклад
+                </h4>
+                <marquee behavior="alternate" direction="right" loop="2">Рядок що рухається marquee alternate</marquee>
+                <marquee behavior="slide" direction="right">Рядок що рухається marquee slide</marquee>
+                <marquee behavior="scroll" direction="right" id="m1">Рядок що рухається marquee scroll</marquee>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+<pre><code class="language-html">
+    &lt;marquee behavior="alternate" direction="right" loop="2"&gt;Рядок що рухається marquee alternate&lt;/marquee&gt;
+    &lt;marquee behavior="slide" direction="right"&gt;Рядок що рухається marquee slide&lt;/marquee&gt;
+    &lt;marquee behavior="scroll" direction="right" id="m1"&gt;Рядок що рухається marquee scroll&lt;/marquee&gt;
+</code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+</code></pre>
+                    </div>
+                </div>
+
+                <h3>
+                    CSS Анімація
+                </h3>
+                <ul>
+                    <li>
+                        animation-name: Визначає ім'я анімації, яка буде застосована до вказаного елемента.
+                    </li>
+                    <li>
+                        animation-duration: Визначає тривалість анімації у секундах або мілісекундах.
+                    </li>
+                    <li>
+                        animation-delay: Визначає затримку перед початком анімації.
+                    </li>
+                    <li>
+                        animation-iteration-count: Визначає кількість повторень анімації.
+                    </li>
+                    <li>
+                        animation-direction: Визначає напрямок анімації, наприклад, вперед, назад або чергування.
+                    </li>
+                    <li>
+                        animation-timing-function: Визначає швидкість зміни анімації (ефект "рівномірного прискорення").
+                    </li>
+                    <li>
+                        @keyframes: Визначає ключові моменти анімації та їх проміжні значення.
+                    </li>
+                </ul>
+                <h4>
+                    Анімаційні властивості
+                </h4>
+                <ul>
+                    <li>
+                        from: Вказує початкове значення анімації.
+                    </li>
+                    <li>
+                        to: Вказує кінцеве значення анімації.
+                    </li>
+                    <li>
+                        Проміжні відсоткові значення: Вказують проміжні стани анімації за допомогою відсоткового значення часу.
+                    </li>
+                </ul>
+                <h4>Проста анімація</h4>   
+                <div id="d1"></div>
+
+                <div id="d2"></div>
+                <div id="d3"></div>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+<pre><code class="language-html">
+    &lt;div id="d1"&gt;&lt;/div&gt;
+    &lt;div id="d2"&gt;&lt;/div&gt;
+    &lt;div id="d3"&gt;&lt;/div&gt;
+</code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    #d1, #d2, #d3{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+    #d1{
+        animation-name: example1;
+        animation-duration: 4s;
+    }
+    @keyframes example1{
+        from{background-color: blue;}
+        to{background-color: blueviolet;}
+    }
+    
+    #d2{
+        animation-name: example2;
+        animation-duration: 4s;
+    }
+    @keyframes example2{
+        25%{background-color: rgb(150, 225, 20);}
+        100%{background-color: rgb(225, 7, 7);}
+        75%{background-color: rgb(87, 7, 225);}
+        25%{background-color: rgb(225, 7, 130);}
+        50%{background-color: rgb(7, 225, 170);}
+    }
+    
+    #d3{
+        animation-name: example3;
+        animation-duration: 4s;
+        position: relative;
+    }
+    @keyframes example3{
+        25%{background-color: rgb(150, 225, 20);left: 0px; top: 0px;}
+        100%{background-color: rgb(225, 7, 7); left: 10px; top: 0px;}
+        75%{background-color: rgb(87, 7, 225);left: 10px; top: 10px}
+        25%{background-color: rgb(225, 7, 130);left: 30px; top: 30px}
+        50%{background-color: rgb(7, 225, 170);left: 0px; top: 0px}
+    }
+</code></pre>
+                    </div>
+                </div>
+                <h4>
+                    animation-delay
+                </h4>
+                <div id="d4"></div>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+<pre><code class="language-html">
+&lt;div id="d4"&gt;&lt;/div&gt;
+</code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    #d4{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+    #d4{
+        animation-name: example4;
+        animation-duration: 4s;
+        position: relative;
+        animation-delay: -2s;
+    }
+    @keyframes example4{
+        25%{background-color: rgb(150, 225, 20);left: 0px; top: 0px;}
+        100%{background-color: rgb(225, 7, 7); left: 10px; top: 0px;}
+        75%{background-color: rgb(87, 7, 225);left: 10px; top: 10px}
+        25%{background-color: rgb(225, 7, 130);left: 30px; top: 30px}
+        50%{background-color: rgb(7, 225, 170);left: 0px; top: 0px}
+    }
+</code></pre>
+                    </div>
+                </div>
+                <h4>
+                    animation-iteration-count
+                </h4>
+                <div id="d5"></div>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+<pre><code class="language-html">
+&lt;div id="d5"&gt;&lt;/div&gt;
+</code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    #d5{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+    #d5{
+        animation-name: example5;
+        animation-duration: 4s;
+        position: relative;
+        animation-iteration-count: infinite;
+    }
+    @keyframes example5{
+        25%{background-color: rgb(150, 225, 20);left: 0px; top: 0px;}
+        100%{background-color: rgb(225, 7, 7); left: 100px; top: 0px;}
+        75%{background-color: rgb(87, 7, 225);left: 100px; top: -100px}
+        25%{background-color: rgb(225, 7, 130);left: 300px; top: -200px}
+        50%{background-color: rgb(7, 225, 170);left: 400px; top: -400px}
+    }
+</code></pre>
+                    </div>
+                </div>
+                <h4>
+                    animation-direction: reverse 
+                </h4>
+                <div id="d6"></div>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+<pre><code class="language-html">
+&lt;div id="d6"&gt;&lt;/div&gt;
+</code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    #d6{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+    #d6{
+        animation-name: example6;
+        animation-duration: 4s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+    }
+    @keyframes example6{
+        25%{background-color: rgb(150, 225, 20);left: 0px; top: 0px;}
+        100%{background-color: rgb(225, 7, 7); left: 250px; top: 0px;}
+        75%{background-color: rgb(87, 7, 225);left: 250px; top: -150px}
+        25%{background-color: rgb(225, 7, 130);left: 450px; top: -150px}
+        50%{background-color: rgb(7, 225, 170);left: 500px; top: -300px}
+    }
+</code></pre>
+                    </div>
+                </div>
+                <h4>
+                    animation-direction: alternate
+                </h4>
+                <div id="d7"></div>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+<pre><code class="language-html">
+&lt;div id="d7"&gt;&lt;/div&gt;
+</code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    #d7{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+    #d7{
+        animation-name: example7;
+        animation-duration: 4s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes example7{
+        25%{background-color: rgb(150, 225, 20);left: 0px; top: 0px;}
+        100%{background-color: rgb(225, 7, 7); left: 100px; top: 0px;}
+        75%{background-color: rgb(87, 7, 225);left: 100px; top: 200px}
+        25%{background-color: rgb(225, 7, 130);left: 300px; top: 200px}
+        50%{background-color: rgb(7, 225, 170);left: 400px; top: 400px}
+    }
+</code></pre>
+                    </div>
+                </div>
+                <h4>animation-timing-function</h4>
+                <div id="d8">linear</div>
+                <div id="d9">ease-in</div>
+                <div id="d10">ease-out</div>
+                <div id="d11">ease-in-out</div>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+<pre><code class="language-html">
+&lt;div id="d8"&gt;&lt;/div&gt;
+&lt;div id="d9"&gt;&lt;/div&gt;
+&lt;div id="d10"&gt;&lt;/div&gt;
+&lt;div id="d11"&gt;&lt;/div&gt;
+</code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    #d8, #d9, #d10, #d11{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin-top: 10px;
+    }
+    #d8{
+        animation-name: example8;
+        animation-duration: 4s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    
+    }
+    @keyframes example8{
+        from{background-color: rgb(150, 225, 20);left: 0px; top: 0px;}
+        to{background-color: rgb(225, 7, 7); left: 1000px; top: 0px;}
+    }
+    
+    #d9{
+        animation-name: example9;
+        animation-duration: 4s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    
+    }
+    @keyframes example9{
+        from{background-color: rgb(150, 225, 20);left: 0px; top: 0px;}
+        to{background-color: rgb(225, 7, 7); left: 1000px; top: 0px;}
+    }
+    
+    #d10{
+        animation-name: example10;
+        animation-duration: 4s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    
+    }
+    @keyframes example10{
+        from{background-color: rgb(150, 225, 20);left: 0px; top: 0px;}
+        to{background-color: rgb(225, 7, 7); left: 1000px; top: 0px;}
+    }
+    
+    #d11{
+        animation-name: example11;
+        animation-duration: 4s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    
+    }
+    @keyframes example11{
+        from{background-color: rgb(150, 225, 20);left: 0px; top: 0px;}
+        to{background-color: rgb(225, 7, 7); left: 1000px; top: 0px;}
+    }
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script>
+        var barBtn = document.getElementById('barBtn');
+        var leftMenu = document.getElementById('leftMenu');
+
+        window.onload = function() {
+            if(window.innerWidth <= 1100) {
+                barBtn.style.display = 'block';
+                leftMenu.style.display = 'none';
+            }else{
+                barBtn.style.display = 'none';
+            }
+        }
+
+
+        window.onresize = function() {
+            if(window.innerWidth <= 1100) {
+                barBtn.style.display = 'block';
+                leftMenu.style.display = 'none';
+            } else {
+                barBtn.style.display = 'none';
+                leftMenu.style.display = 'block';
+            }
+        }
+
+        barBtn.onclick = function() {
+            if(leftMenu.style.display === 'none') {
+                leftMenu.style.display = 'block';
+            } else {
+                leftMenu.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            var headerHeight = 120;
+            var scrollY = window.scrollY;
+            var newTop = headerHeight - scrollY;
+        
+            if (newTop < 0) {
+                newTop = 0;
+            }
+
+            document.documentElement.style.setProperty('--menu-top', newTop + 'px');
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const examples = document.querySelectorAll(".example");
+
+            examples.forEach(example => {
+            const tabs = example.querySelectorAll(".tab");
+            const codeContainers = example.querySelectorAll(".code-container");
+
+                tabs.forEach(tab => {
+                    tab.addEventListener("click", () => {
+                    const tabType = tab.getAttribute("data-tab");
+                    const codeContainer = example.querySelector(`.code-container[data-code="${tabType}"]`);
+
+                    if (tab.classList.contains("active")) {
+                        tab.classList.remove("active");
+                        codeContainer.classList.remove("active");
+                    } else {
+                        tabs.forEach(t => t.classList.remove("active"));
+                        codeContainers.forEach(cc => cc.classList.remove("active"));
+                        tab.classList.add("active");
+                        codeContainer.classList.add("active");
+                    }
+                });
+            });
+        });
+    });
+    </script>
+</body>
+</html>

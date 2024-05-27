@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/html.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div style="background-color: rgb(255, 200, 0); height: 80px;">
+                <h1>HTML & CSS</h1>
+            </div>
+            <div style="background-color: rgb(51, 51, 49); height: 40px;">
+                <nav class="nav" style="margin-left: -15px;">
+                    <ul class="menu">
+                        <li>
+                            <i class="fas fa-bars" style=" color: white;" id="barBtn"></i>
+                        </li>
+                        <li style="margin-left: -25px;">
+                            <a href="../../index.html">Головна</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="leftMenu" style="background-color: #f8f9fa;" id="leftMenu">
+                <a href="../Градієнти/index.html">Градієнти</a>
+                <a href="../Зображення/index.html">Зображення</a>
+                <a href="../Списки/index.html">Списки</a>
+                <a href="../Таблиці/index.html">Таблиці</a>
+                <a href="../Посилання/index.html">Посилання та кнопки</a>
+                <a href="../Форми/index.html">Форми</a>
+                <a href="../Анімація/index.html">Анімація</a>
+                <a href="../Мультимедія/index.html">Мультимедія</a>
+                <a href="../Map/index.html">Тег map</a>
+                <a href="../Адаптивність/index.html">Адаптивний дизайн</a>
+            </div>
+            <div class="content" style="background-color: #f8f9fa;">
+                <h2>
+                    Адаптивний дизайн
+                </h2>
+                <h3>Медіа-запити (Media Queries)</h3>
+                <p>
+                    Медіа-запити застосовуються для зміни вигляду сайту на різних розмірах екрану. 
+                    Наприклад, при розширенні екрану менше 768px, навігаційне меню (nav ul) переходить 
+                    у вертикальний режим, а контент (content) відображається у стовпцевому режимі.
+                </p>
+                <h3>
+                    Гнучкі сітки (Flexbox)
+                </h3>
+                <p>
+                    Для навігаційного меню (nav ul) та контенту (content) використовується CSS Flexbox. 
+                    Це дозволяє елементам гнучко адаптуватися до різних розмірів екрану.
+                </p>
+                <h3>
+                    Респонсивні стилі
+                </h3>
+                <p>
+                    У CSS використовуються відносні одиниці виміру, такі як відсотки та em, 
+                    для встановлення розмірів елементів. Це забезпечує їх адаптивність до різних розмірів екрану.
+                </p>
+                Приклад сайту з адаптивним дизайном
+                <a href="SiteExample/index.html" target="_blank">Приклад сайту з адаптивним дизайном</a>
+                <div class="container example">
+                    <div class="tabs" style="width: 100px; margin-top: 25px;">
+                        <div class="tab" data-tab="html">HTML</div>
+                        <div class="tab" data-tab="css">CSS</div>
+                    </div>
+                    <div class="code-container html-code" data-code="html">
+                        <h2>HTML</h2>
+<pre><code class="language-html">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="uk"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Адаптивний сайт&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Головна&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Про нас&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Послуги&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+        &lt;main&gt;
+            &lt;section class="hero"&gt;
+                &lt;h1&gt;Ласкаво просимо на наш сайт!&lt;/h1&gt;
+                &lt;p&gt;Це приклад адаптивного сайту.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;section class="content"&gt;
+                &lt;article&gt;
+                    &lt;h2&gt;Наша місія&lt;/h2&gt;
+                    &lt;p&gt;Ми прагнемо надавати найкращі послуги.&lt;/p&gt;
+                &lt;/article&gt;
+                &lt;article&gt;
+                    &lt;h2&gt;Наші послуги&lt;/h2&gt;
+                    &lt;p&gt;Ми пропонуємо різноманітні послуги для наших клієнтів.&lt;/p&gt;
+                &lt;/article&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+        &lt;/footer&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    
+</code></pre>
+                    </div>
+                    <div class="code-container css-code" data-code="css">
+                      <h2>CSS</h2>
+<pre><code>
+    /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em 1em;
+}
+
+.content article {
+    flex: 1 1 300px;
+    margin: 1em;
+    padding: 1em;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
+
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script>
+        var barBtn = document.getElementById('barBtn');
+        var leftMenu = document.getElementById('leftMenu');
+
+        window.onload = function() {
+            if(window.innerWidth <= 1100) {
+                barBtn.style.display = 'block';
+                leftMenu.style.display = 'none';
+            }else{
+                barBtn.style.display = 'none';
+            }
+        }
+
+
+        window.onresize = function() {
+            if(window.innerWidth <= 1100) {
+                barBtn.style.display = 'block';
+                leftMenu.style.display = 'none';
+            } else {
+                barBtn.style.display = 'none';
+                leftMenu.style.display = 'block';
+            }
+        }
+
+        barBtn.onclick = function() {
+            if(leftMenu.style.display === 'none') {
+                leftMenu.style.display = 'block';
+            } else {
+                leftMenu.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            var headerHeight = 120;
+            var scrollY = window.scrollY;
+            var newTop = headerHeight - scrollY;
+        
+            if (newTop < 0) {
+                newTop = 0;
+            }
+
+            document.documentElement.style.setProperty('--menu-top', newTop + 'px');
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const examples = document.querySelectorAll(".example");
+
+            examples.forEach(example => {
+            const tabs = example.querySelectorAll(".tab");
+            const codeContainers = example.querySelectorAll(".code-container");
+
+                tabs.forEach(tab => {
+                    tab.addEventListener("click", () => {
+                    const tabType = tab.getAttribute("data-tab");
+                    const codeContainer = example.querySelector(`.code-container[data-code="${tabType}"]`);
+
+                    if (tab.classList.contains("active")) {
+                        tab.classList.remove("active");
+                        codeContainer.classList.remove("active");
+                    } else {
+                        tabs.forEach(t => t.classList.remove("active"));
+                        codeContainers.forEach(cc => cc.classList.remove("active"));
+                        tab.classList.add("active");
+                        codeContainer.classList.add("active");
+                    }
+                });
+            });
+        });
+    });
+    </script>
+</body>
+</html>
